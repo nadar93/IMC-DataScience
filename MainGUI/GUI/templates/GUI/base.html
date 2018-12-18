@@ -1,0 +1,40 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+
+<head>
+<title>DSD</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<!-- VENDOR CSS -->
+<link rel="stylesheet" href="{% static 'assets2/vendor/bootstrap/css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'assets2/vendor/animate-css/animate.min.css' %}">
+<link rel="stylesheet" href="{% static 'assets2/vendor/font-awesome/css/font-awesome.min.css' %}">
+<link rel="stylesheet" href="{% static 'assets2/vendor/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css' %}">
+<link rel="stylesheet" href="{% static 'assets2/vendor/chartist/css/chartist.min.css' %}">
+<link rel="stylesheet" href="{% static 'assets2/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.css' %}">
+
+<!-- MAIN CSS -->
+<link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
+<link rel="stylesheet" href="{% static 'assets/css/color_skins.css' %}">
+</head>
+<body class="theme-blue" style="background: #e5e5e5">
+
+{% block content %}
+
+{% endblock content %}
+
+<!-- Javascript -->
+<script src="{% static 'assets/bundles/libscripts.bundle.js' %}"></script>    
+<script src="{% static 'assets/bundles/vendorscripts.bundle.js' %}"></script>
+<script src="{% static 'assets/bundles/chartist.bundle.js' %}"></script>
+<script src="{% static 'assets/bundles/knob.bundle.js' %}"></script> <!-- Jquery Knob-->
+<script src="{% static 'assets/bundles/flotscripts.bundle.js' %}"></script> <!-- flot charts Plugin Js --> 
+<script src="{% static 'assets2/vendor/flot-charts/jquery.flot.selection.js' %}"></script>
+<script src="{% static 'assets/bundles/mainscripts.bundle.js' %}"></script>
+<script src="{% static 'assets/js/index.js' %}"></script>
+
+</body>
+</html>

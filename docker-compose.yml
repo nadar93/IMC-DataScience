@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+    gui-service:
+        build: ./MainGUI/
+        ports:
+            - 5001:7000
+        command: ["/start.sh"]
+        volumes:
+            - .:/MainGUI
+            
+        #command: python manage.py runserver 0.0.0.0:7000
+        
+    api-service:
+        build: ./HandleRequests/
+        ports:
+            - 5002:8000
+        command: ["/start.sh"]
+        volumes:
+            - .:/HandleRequests
+            
+        #command: python manage.py runserver 0.0.0.0:7000
