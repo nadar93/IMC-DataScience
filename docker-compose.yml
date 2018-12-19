@@ -5,7 +5,7 @@ services:
         build: ./MainGUI/
         ports:
             - 5001:7000
-        command: ["/start.sh"]dwq
+        command: ["/start.sh"]
         volumes:
             - .:/MainGUI
             
