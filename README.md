@@ -8,15 +8,17 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
+You need to have docker installed on your machine.
+
 In order to run the project on Docker, you can either:
 * Make sure to set your docker machine's IP address to 192.168.99.100.
 * or add your docker machine's IP address to the allowed ALLOWED_HOSTS under
 MainGUI\MainGUI\setting.py
 ```
-ALLOWED_HOSTS = ['192.168.99.100', 'localhost', '127.0.0.1']	
+ALLOWED_HOSTS = ['<your_ip>', '192.168.99.100', 'localhost', '127.0.0.1']	
 ```
 
-There are two "start" shell scripts in the following directories, make sure the their EOL conversion is set to UNIX (LF):
+There are two "start" shell scripts in the following directories, **make sure the their EOL conversion is set to UNIX (LF):**
 * /HandleRequests
 * /MainGUI
 
@@ -34,4 +36,4 @@ docker-compose up
 
 ### Application Webpage
 
-You should be able to access 
+You should be able to access the aplication at **<machine_ip>:5001**
