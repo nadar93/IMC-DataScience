@@ -12,13 +12,13 @@ You need to have docker installed on your machine.
 
 In order to run the project on Docker, you can either:
 * Make sure to set your docker machine's IP address to 192.168.99.100.
-* or add your docker machine's IP address to the allowed ALLOWED_HOSTS under
+* or add your docker machine's IP address in the project settings in the file:
 MainGUI\MainGUI\setting.py
 ```
 ALLOWED_HOSTS = ['<your_ip>', '192.168.99.100', 'localhost', '127.0.0.1']	
 ```
 
-There are two "start" shell scripts in the following directories, **make sure the their EOL conversion is set to UNIX (LF):**
+There are **two** "start" shell scripts under the following directories, **make sure that their EOL conversion is set to UNIX (LF):**
 * /HandleRequests
 * /MainGUI
 
