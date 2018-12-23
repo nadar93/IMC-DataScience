@@ -8,6 +8,14 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
+In order to run the project on Docker, you can either:
+* Make sure to set your docker machine's IP address to 192.168.99.100.
+* or add your docker machine's IP address to the allowed ALLOWED_HOSTS under
+MainGUI\MainGUI\setting.py
+```
+ALLOWED_HOSTS = ['192.168.99.100', 'localhost', '127.0.0.1']	
+```
+
 There are two "start" shell scripts in the following directories, make sure the their EOL conversion is set to UNIX (LF):
 * /HandleRequests
 * /MainGUI
@@ -18,20 +26,12 @@ After that, run
 docker-compose build
 ```
 
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+Docker will download the model from a google drive since the model's size is greater than 100 MB which is the maximum that Github allows.
 
 ```
-Give the example
+docker-compose up
 ```
 
+### Application Webpage
 
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
+You should be able to access 
