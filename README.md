@@ -1,17 +1,21 @@
-# Project Title
+# IMC-DataScience Project 2018
 
-One Paragraph of project description goes here
+This is a class project for IMC Data Science class with Pouya Yousefi. The project consists of two django applications (one for UI and the other for API) running on separate docker images. The docker images are built and run using docker-compse. The project also consists of a machine learning model that predicts purchses of users based on their social constructs (age, city, marital status) during Black Friday. 
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+There are two "start" shell scripts in the following directories, make sure the their EOL conversion is set to UNIX (LF):
+* /HandleRequests
+* /MainGUI
+
+After that, run
 
 ```
-Give examples
+docker-compose build
 ```
 
 ### Installing
