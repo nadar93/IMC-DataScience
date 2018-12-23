@@ -22,18 +22,15 @@ There are **two** "start" shell scripts under the following directories, **make 
 * /HandleRequests
 * /MainGUI
 
-After that, run
+### Building & Running
+You have to build the docker-compose file first to download the machine learning model.
 
 ```
 docker-compose build
 ```
-
 Docker will download the model from a google drive since the model's size is greater than 100 MB which is the maximum that Github allows.
-
 ```
 docker-compose up
 ```
-
-### Application Webpage
 
 You should be able to access the aplication at **<machine_ip>:5001**
