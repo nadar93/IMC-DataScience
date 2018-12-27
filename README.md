@@ -3,7 +3,7 @@
 This is a class project for IMC Data Science class with Pouya Yousefi. The project consists of two django applications (one for UI and the other for API) running on separate docker images. The docker images are built and run using docker-compse. The project also consists of a machine learning model that predicts purchses of users based on their social constructs (age, city, marital status) during Black Friday. 
 
 ## Getting Started
-
+i
 These instructions will get you a copy of the project up and running on your local machine.
 
 ### Prerequisites
@@ -33,4 +33,4 @@ Docker will download the model from a google drive since the model's size is gre
 docker-compose up
 ```
 
-### You should be able to access the aplication at **<machine_ip>:5001**
+### You should be able to access the application at **<machine_ip>:5001**
