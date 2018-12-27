@@ -11,7 +11,7 @@ These instructions will get you a copy of the project up and running on your loc
 **You need to have docker installed on your machine.**
 
 In order to run the project on Docker, you can either:
-* 1. Make sure to set your docker machine's IP address to 192.168.99.100.
+* 1. Set your docker machine's IP address to 192.168.99.100.
 * 2. Add your docker machine's IP address to the project settings file under:
 MainGUI\MainGUI\setting.py
 ```
