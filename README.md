@@ -28,7 +28,7 @@ You have to build the docker-compose file first to download the machine learning
 ```
 docker-compose build
 ```
-Docker will download the model from a google drive repo since the model's size is greater than 100 MB which is the maximum that Github allows.
+Docker will download the model from a google drive repo since the model's size is greater than 100 MB which is the maximum size for a file that Github allows to push.
 ```
 docker-compose up
 ```
